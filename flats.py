@@ -66,7 +66,7 @@ def main():
 
     
     
-    for page in range(1, 11):
+    for page in range(1, page_count):
         #print('Parsim %d%%' %(page / page_count * 10))
         flats.extend(parse(get_html(base_url + '?Page=%d' % page)))
     
